@@ -36,7 +36,7 @@ public:
                 maxArea = std::max(getTopAreaUntil(i - 1), maxArea);
             }
             
-            if (greaterThanTop(i)) { topIndices.push(i); }
+            topIndices.push(i);
         }
         
         while (not topIndices.empty())
