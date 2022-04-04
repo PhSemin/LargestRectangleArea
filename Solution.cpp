@@ -31,12 +31,6 @@ public:
         
         for (i = 0; i < heights.size(); i++)
         {
-            if (greaterThanTop(i))
-            {
-                topIndices.push(i);
-                continue;
-            }
-            
             while (not greaterThanTop(i))
             {
                 maxArea = std::max(getTopAreaUntil(i - 1), maxArea);
